@@ -63,7 +63,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: preparation-data
-          # Upload the directory itself to preserve structure
+          # Upload the directory to preserve structure
           path: |
             resolvers.txt
             chunks
@@ -77,14 +77,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # QUOTED STRINGS to prevent YAML from converting '05' to integer '5'
+        # QUOTED STRINGS to prevent YAML integer conversion issues
         part: ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19']
     steps:
       - name: Download Preparation Data
         uses: actions/download-artifact@v4
         with:
           name: preparation-data
-          # Download to current directory; 'chunks' folder will be restored here
           path: .
 
       - name: Install Tools & Configure Path
@@ -101,30 +100,21 @@ jobs:
           # Fix PATH
           echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
 
-      - name: Debug File Structure
-        run: ls -R chunks/
-
       - name: Run Pipeline on Chunk ${{ matrix.part }}
         run: |
-          # The file should now correctly correspond to the quoted matrix string
           WORDLIST="chunks/wordlist_part_${{ matrix.part }}"
-          
-          echo "Processing $WORDLIST..."
           
           # 1. Shuffledns
           shuffledns -w $WORDLIST -d ${{ env.TARGET_DOMAIN }} -r resolvers.txt -mode bruteforce -retries 3 -o raw_subs_${{ matrix.part }}.txt
           
-          # 2. Dnsx
-          echo "Running dnsx validation..."
+          # 2. Dnsx (Validate)
           if [ -s raw_subs_${{ matrix.part }}.txt ]; then
              cat raw_subs_${{ matrix.part }}.txt | grep "${{ env.TARGET_DOMAIN }}$" | dnsx -silent -r resolvers.txt -o valid_subs_${{ matrix.part }}.txt || true
           else
-             echo "No subdomains found in this chunk"
              touch valid_subs_${{ matrix.part }}.txt
           fi
           
-          # 3. Httpx
-          echo "Running httpx..."
+          # 3. Httpx (Probe)
           if [ -s valid_subs_${{ matrix.part }}.txt ]; then
              httpx -l valid_subs_${{ matrix.part }}.txt \
                -follow-host-redirects -nc -title -status-code -cdn -tech-detect \
@@ -169,7 +159,7 @@ jobs:
           CURR_HTTPX="current_httpx.txt"
           touch $PREV_HTTPX
           
-          # 1. New Services
+          # --- 1. Detect New Services ---
           awk '{print $1}' $PREV_HTTPX | sort > prev_urls.txt
           awk '{print $1}' $CURR_HTTPX | sort > curr_urls.txt
           
@@ -177,14 +167,15 @@ jobs:
           
           if [ -s new_urls_keys.txt ]; then
             echo "New services found..."
-            grep -Ff new_urls_keys.txt $CURR_HTTPX > added_services.txt
+            # grep finds lines, sed G adds an empty line after each result
+            grep -Ff new_urls_keys.txt $CURR_HTTPX | sed G > added_services.txt
             
             MSG="**Httpx - Services Added:**\n\`\`\`\n$(cat added_services.txt | head -c 1900)\n\`\`\`"
             JSON_PAYLOAD=$(jq -n --arg content "$MSG" '{content: $content}')
             curl -H "Content-Type: application/json" -d "$JSON_PAYLOAD" "${{ env.DISCORD_TOKEN }}"
           fi
           
-          # 2. Status Changes
+          # --- 2. Detect Status Changes ---
           python3 -c "
           import sys
           def load_map(fname):
@@ -212,7 +203,8 @@ jobs:
                       changes.append(f'URL: {url} | Old: {prev[url]} -> New: {status}')
           
           if changes:
-              print('\n'.join(changes))
+              # CHANGED: Join with double newline for better Discord spacing
+              print('\n\n'.join(changes))
           " > changed_services.txt
           
           if [ -s changed_services.txt ]; then
@@ -222,6 +214,7 @@ jobs:
              curl -H "Content-Type: application/json" -d "$JSON_PAYLOAD" "${{ env.DISCORD_TOKEN }}"
           fi
           
+          # Update Files for next run
           cp current_subdomains.txt prev_output.${{ env.TARGET_DOMAIN }}.txt
           cp $CURR_HTTPX $PREV_HTTPX
 
