@@ -124,7 +124,7 @@ https://webwhois.verisign.com [302,200] [Whois] [Apache HTTP Server,Bootstrap,HS
 https://welcome.verisign.com [200] [Apache HTTP Server,HSTS]
 https://www.cart.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 https://www.dev.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
-https://www.gslb.verisign.com [200] [Apache HTTP Server,HSTS]
+https://www.gslb.verisign.com [400] [Apache HTTP Server,HSTS, ghoromsagh]
 https://www.origin1.cdn1.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 https://www.ort.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 https://www.server10.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
@@ -132,6 +132,7 @@ https://www.server5.www1.verisign.com [403] [ERROR: The request could not be sat
 https://www.server7.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 https://www.server8.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 https://www.server9.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
-https://www.verisign.com [200] [A global provider of domain name registry services and internet infrastructure | Verisign] [Apache HTTP Server,HSTS,Hugo:0.114.1]
 https://www.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 https://www1.verisign.com [200] [A global provider of domain name registry services and internet infrastructure | Verisign] [Apache HTTP Server,HSTS,Hugo:0.114.1]
+https://mehran.verisign.com [601,202] [Apache HTTP Server,HSTS,Java]
+
