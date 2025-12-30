@@ -207,7 +207,6 @@ jobs:
                       changes.append(f'URL: {url} | Old: {prev[url]} -> New: {status}')
           
           if changes:
-              # CHANGED: Join with double newline for better Discord spacing
               print('\n\n'.join(changes))
           " > changed_services.txt
           
@@ -218,9 +217,47 @@ jobs:
              curl -H "Content-Type: application/json" -d "$JSON_PAYLOAD" "${{ env.DISCORD_TOKEN }}"
           fi
           
-          # Update Files for next run
+          # --- 3. Update History (CUMULATIVE MERGE) ---
+          # This prevents deleting history if a scan misses a subdomain temporarily
+          python3 -c "
+          import sys
+          
+          prev_file = '$PREV_HTTPX'
+          curr_file = '$CURR_HTTPX'
+          
+          # Dictionary to hold unique URLs: { 'https://sub.com': 'full_line_content' }
+          database = {}
+          
+          # A. Load OLD history first (Populate database)
+          try:
+              with open(prev_file, 'r') as f:
+                  for line in f:
+                      parts = line.strip().split()
+                      if parts:
+                          url = parts[0]
+                          database[url] = line.strip()
+          except FileNotFoundError:
+              pass
+
+          # B. Load NEW scan results (Update/Overwrite existing keys, add new ones)
+          try:
+              with open(curr_file, 'r') as f:
+                  for line in f:
+                      parts = line.strip().split()
+                      if parts:
+                          url = parts[0]
+                          database[url] = line.strip()
+          except FileNotFoundError:
+              pass
+
+          # C. Write the merged database back to prev_httpx_res.txt
+          with open(prev_file, 'w') as f:
+              for line in sorted(database.values()):
+                  f.write(line + '\n')
+          "
+
+          # Simple overwrite is fine for subdomains list as it's less critical for state tracking
           cp current_subdomains.txt prev_output.${{ env.TARGET_DOMAIN }}.txt
-          cp $CURR_HTTPX $PREV_HTTPX
 
       - name: Commit and Push Changes
         env:
@@ -236,3 +273,10 @@ jobs:
             git commit -m "Update scan results for ${{ env.TARGET_DOMAIN }}"
             git push
           fi
+
+      - name: Notify Completion
+        if: always()
+        run: |
+          curl -H "Content-Type: application/json" \
+            -d '{"content": "✅ **Bruteforce is done succesfully**"}' \
+            "${{ env.DISCORD_TOKEN }}"
