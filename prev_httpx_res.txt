@@ -87,6 +87,7 @@ http://server2.www1.verisign.com [403] [ERROR: The request could not be satisfie
 http://server3.tccwest.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://server3.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://server4.direct.tccwest.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
+http://server4.tcceast.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://server4.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://server6.direct.tcceast.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://server6.direct.tccwest.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
