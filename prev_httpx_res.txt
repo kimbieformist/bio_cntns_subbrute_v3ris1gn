@@ -72,6 +72,7 @@ http://h18033.www1.verisign.com [403] [ERROR: The request could not be satisfied
 http://h20219.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://ocsp.verisign.com [200] [cloudflare] [Cloudflare]
 http://onsitecrl.verisign.com [200] [Nginx]
+http://pages.messages.verisign.com [403] [403 - Forbidden: Access is denied.]
 http://pki-ocsp.verisign.com [200] [cloudflare] [Cloudflare]
 http://sandbox.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://server1.ap2c.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
