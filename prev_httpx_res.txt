@@ -252,6 +252,7 @@ https://nsw-service.verisign.com [404] [Page not found/Unkown error occured] [cl
 https://nswm-service.verisign.com [404] [Page not found/Unkown error occured] [cloudfront] [Amazon CloudFront,Amazon S3,Amazon Web Services,HSTS]
 https://ocsp.verisign.com [403] [Access Denied]
 https://onetrust.verisign.com [200] [Apache HTTP Server,HSTS]
+https://origin.www.verisign.com [200] [A global provider of domain name registry services and internet infrastructure | Verisign] [Apache HTTP Server,HSTS,Hugo:0.114.1]
 https://origin1.cdn1.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 https://ort.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 https://ote-accounts-otp.verisign.com [307,200] [Apache HTTP Server,HSTS,Java]
