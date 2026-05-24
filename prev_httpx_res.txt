@@ -78,6 +78,7 @@ http://origin.www.verisign.com [301] [301 Moved Permanently] [Apache HTTP Server
 http://pages.messages.verisign.com [403] [403 - Forbidden: Access is denied.]
 http://pki-ocsp.verisign.com [200] [cloudflare] [Cloudflare]
 http://rdap.verisign.com [301,400]
+http://request.verisign.com [404] [404 Not Found]
 http://sandbox.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://server1.ap2c.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://server1.direct.ap2a.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
