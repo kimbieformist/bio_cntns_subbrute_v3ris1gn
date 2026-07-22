@@ -1,4 +1,5 @@
 http://appraisers.use1qaprodweb03.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
+http://arva-holding-staging.standard.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://avail-demo.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://certipath-aia.verisign.com [200] [cloudflare] [Cloudflare]
 http://click.messages.verisign.com [301,403] [403 - Forbidden: Access is denied.] [HSTS]
