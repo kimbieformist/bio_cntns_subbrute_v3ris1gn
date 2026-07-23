@@ -7,6 +7,7 @@ http://clientlogger.marketplace.aws.verisign.com [403] [ERROR: The request could
 http://confixx.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://cpo.env1.acp.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://crl.verisign.com [200] [cloudflare] [Cloudflare]
+http://errbit.staging.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://ftp.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://h10000.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://h10003.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
