@@ -144,6 +144,7 @@ http://splunk-dedicated-fwd.uat-irmip.aws.verisign.com [403] [ERROR: The request
 http://startonline.verisign.com [301,301] [301 Moved Permanently] [Apache HTTP Server,HSTS]
 http://styleguide.verisign.com [301,301] [301 Moved Permanently] [Apache HTTP Server,HSTS]
 http://topcat.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
+http://tten.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://us-east-1.quicksight.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://view.messages.verisign.com [301,302,200] [Error] [HSTS,Microsoft Visual Studio]
 http://volta-logs-cf-us-east.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
