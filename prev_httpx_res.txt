@@ -20,6 +20,7 @@ http://errbit.staging.aws.verisign.com [403] [ERROR: The request could not be sa
 http://faststats.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://fencing.use1qaprodweb04.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://ftp.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
+http://glacier-console-ap-northeast-1.console.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://h10000.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://h10003.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://h10004.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
