@@ -13,6 +13,7 @@ http://chef-analytics.innoc.acp.aws.verisign.com [403] [ERROR: The request could
 http://click.messages.verisign.com [301,403] [403 - Forbidden: Access is denied.] [HSTS]
 http://clientlogger.marketplace.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://confixx.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
+http://console.chime.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://cpo.env1.acp.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://crl.verisign.com [200] [cloudflare] [Cloudflare]
 http://csgw-live.dk.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
