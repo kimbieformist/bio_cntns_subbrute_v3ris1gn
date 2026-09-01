@@ -14,6 +14,7 @@ http://carl.aws.verisign.com [403] [ERROR: The request could not be satisfied] [
 http://certipath-aia.verisign.com [200] [cloudflare] [Cloudflare]
 http://chartengine.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://chef-analytics.innoc.acp.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
+http://claimv1.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://click.messages.verisign.com [301,403] [403 - Forbidden: Access is denied.] [HSTS]
 http://clientlogger.marketplace.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://confixx.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
