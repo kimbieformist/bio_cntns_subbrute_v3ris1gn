@@ -124,7 +124,7 @@ http://newdialogys.asdh.aws.verisign.com [403] [ERROR: The request could not be 
 http://nsw-config.verisign.com [301,404] [Page not found/Unkown error occured] [cloudfront] [Amazon CloudFront,Amazon S3,Amazon Web Services,HSTS]
 http://nsw-service.verisign.com [301,404] [Page not found/Unkown error occured] [cloudfront] [Amazon CloudFront,Amazon S3,Amazon Web Services,HSTS]
 http://nswm-service.verisign.com [301,404] [Page not found/Unkown error occured] [cloudfront] [Amazon CloudFront,Amazon S3,Amazon Web Services,HSTS]
-http://ocsp.verisign.com [200] [cloudflare] [Cloudflare]
+http://ocsp.verisign.com [200]
 http://onetrust.verisign.com [200] [Apache HTTP Server,HSTS]
 http://onsitecrl.verisign.com [200] [Nginx]
 http://oozie-adl-prod1.us-east-1.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
