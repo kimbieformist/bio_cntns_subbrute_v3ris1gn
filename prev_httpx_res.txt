@@ -136,6 +136,7 @@ http://plumbers.use1qaprodweb02.aws.verisign.com [403] [ERROR: The request could
 http://preprod.idp.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://rdap.verisign.com [301,400]
 http://redirect.prod.experiment.routing.cloudfront.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
+http://remote-support-monitor.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://request.verisign.com [404] [404 Not Found]
 http://sa-east-1.signin-reg.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://sandbox-ii-us-east-1-paas-opsmgr.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
