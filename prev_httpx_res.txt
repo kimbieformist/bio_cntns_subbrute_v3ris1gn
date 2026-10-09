@@ -377,6 +377,7 @@ https://h17134.www1.verisign.com [403] [ERROR: The request could not be satisfie
 https://h18000.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 https://h18033.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 https://h20219.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
+https://investor.verisign.com [403] [Access Denied]
 https://le.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 https://lk.www1.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 https://login-otp.verisign.com [404] [404 Not Found] [Apache HTTP Server]
