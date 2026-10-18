@@ -164,6 +164,7 @@ http://manager.aws.verisign.com [403] [ERROR: The request could not be satisfied
 http://massagetherapists.use1qacomboweb01.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://master.staging.b2b2c.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://menagerie.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
+http://my-dev.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://network.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://newdialogys.asdh.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://nsw-config.verisign.com [301,404] [Page not found/Unkown error occured] [cloudfront] [Amazon CloudFront,Amazon S3,Amazon Web Services,HSTS]
