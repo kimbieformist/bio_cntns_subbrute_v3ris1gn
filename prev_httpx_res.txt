@@ -238,6 +238,7 @@ http://tten.aws.verisign.com [403] [ERROR: The request could not be satisfied] [
 http://us-east-1.quicksight.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://view.messages.verisign.com [301,302,200] [Error] [HSTS,Microsoft Visual Studio]
 http://volta-logs-cf-us-east.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
+http://volta-metrics-riskinsight.us-east-1.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://vpn.dr.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://webvpn-dev.aws.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
 http://welcome.verisign.com [403] [ERROR: The request could not be satisfied] [cloudfront] [Amazon CloudFront,Amazon Web Services]
